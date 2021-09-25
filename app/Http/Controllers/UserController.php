@@ -84,4 +84,10 @@ class UserController extends Controller
     {
         //
     }
+
+    public function allUsers(){
+        $users = User::all();
+        //dd($users);
+        return response($users, 200);
+    }
 }
